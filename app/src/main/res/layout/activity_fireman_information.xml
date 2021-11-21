@@ -10,8 +10,8 @@
     <fragment
         android:id="@+id/mapAPI"
         android:name="com.google.android.gms.maps.SupportMapFragment"
-        android:layout_width="418dp"
-        android:layout_height="381dp" />
+        android:layout_width="413dp"
+        android:layout_height="442dp" />
 
     <TextView
         android:id="@+id/textView2"
