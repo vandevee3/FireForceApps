@@ -11,7 +11,5 @@ public class BuildingCondition extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_building_condition);
 
-        getSupportActionBar().hide();
-        
     }
 }
