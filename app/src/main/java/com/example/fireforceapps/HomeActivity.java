@@ -1,6 +1,7 @@
 package com.example.fireforceapps;
 
 import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 
@@ -12,6 +13,8 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getColor(R.color.red)));
     }
 
     public void onClick(View view) {
