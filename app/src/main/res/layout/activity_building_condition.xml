@@ -5,6 +5,6 @@
     android:layout_height="match_parent"
     tools:context=".BuildingCondition">
 
-    <com.syn
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
