@@ -39,6 +39,8 @@ public class FiremanInformation extends FragmentActivity implements OnMapReadyCa
 
         mapAPI.addMarker(new MarkerOptions().position(PemadamKebakaranSurabaya).title("Damkar"));
 
-        mapAPI.moveCamera(CameraUpdateFactory.newLatLng(PemadamKebakaranSurabaya));
+        mapAPI.moveCamera(CameraUpdateFactory.newLatLngZoom(PemadamKebakaranSurabaya, 10));
+
+
     }
 }
