@@ -1,75 +1,49 @@
 package com.example.fireforceapps;
 
-import android.content.Intent;
-import android.graphics.drawable.ColorDrawable;
-import android.os.Build;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.ImageView;
-import android.widget.Toast;
 
-import androidx.annotation.RequiresApi;
+import java.io.*;
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.synnapps.carouselview.CarouselView;
-import com.synnapps.carouselview.ImageClickListener;
-import com.synnapps.carouselview.ImageListener;
+import androidx.annotation.NonNull;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import android.os.Bundle;
+import android.view.MenuItem;
 
 public class BuildingCondition extends AppCompatActivity {
 
-    private int[] mImages = new int[]{
-      R.drawable.ic_safe_information__1_, R.drawable.ic_warning_information__1_
-    };
-
-    private String[] mImagesTitle = new String[]{
-      "Safe Information", "Warning Infomration"
-    };
-
+    BottomNavigationView bottomNavigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_building_condition);
+        setContentView(R.layout.activity_home);
 
-        getSupportActionBar().hide();
+        bottomNavigationView = findViewById(R.id.bottomNavigationView);
 
-        CarouselView carouselView = findViewById(R.id.carousel);
-        carouselView.setPageCount(mImages.length);
-        carouselView.setImageListener(new ImageListener() {
-            @Override
-            public void setImageForPosition(int position, ImageView imageView) {
-                imageView.setImageResource(mImages[position]);
-
-            }
-        });
-        carouselView.setImageClickListener(new ImageClickListener() {
-            private int position;
-
-            @Override
-            public void onClick(int position) {
-                this.position = position;
-                Toast.makeText(BuildingCondition.this, "",Toast.LENGTH_SHORT).show();
-            }
-        });
+        bottomNavigationView.setOnNavigationItemSelectedListener(this);
+        bottomNavigationView.setSelectedItemId(R.id.buildingCondition);
 
     }
+    FiremanInformationFragment firemanFragment = new FiremanInformationFragment();
+    BuildingConditionFragment buildingFragment = new BuildingConditionFragment();
+    TipsFragment tipsFragment = new TipsFragment();
 
-    public void onClickFireman(View view) {
-        Intent intent = new Intent(BuildingCondition.this, FiremanInformation.class);
-        intent.addFlags(intent.FLAG_ACTIVITY_CLEAR_TOP);
-        startActivity(intent);
-    }
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
-    public void onClickTips(View view) {
-        Intent intent = new Intent(BuildingCondition.this, Tips.class);
-        intent.addFlags(intent.FLAG_ACTIVITY_CLEAR_TOP);
-        startActivity(intent);
-    }
+        switch (item.getItemId()) {
+            case R.id.firemanInformation:
+                getSupportFragmentManager().beginTransaction().replace(R.id.container, firemanFragment).commit();
+                return true;
 
-    public void onClickDontDo(View view) {
-        Intent intent = new Intent(BuildingCondition.this, DontDo.class);
-        intent.addFlags(intent.FLAG_ACTIVITY_CLEAR_TOP);
-        startActivity(intent);
+            case R.id.buildingCondition:
+                getSupportFragmentManager().beginTransaction().replace(R.id.container, buildingFragment).commit();
+                return true;
+
+            case R.id.tips:
+                getSupportFragmentManager().beginTransaction().replace(R.id.container, tipsFragment).commit();
+                return true;
+        }
+        return false;
     }
 
 
