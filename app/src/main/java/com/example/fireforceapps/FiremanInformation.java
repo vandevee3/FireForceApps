@@ -1,7 +1,9 @@
 package com.example.fireforceapps;
 
+import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentActivity;
@@ -42,5 +44,23 @@ public class FiremanInformation extends FragmentActivity implements OnMapReadyCa
         mapAPI.moveCamera(CameraUpdateFactory.newLatLngZoom(PemadamKebakaranSurabaya, 10));
 
 
+    }
+
+    public void onClickBuilding(View view) {
+        Intent intent = new Intent(FiremanInformation.this, BuildingCondition.class);
+        intent.addFlags(intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(intent);
+    }
+
+    public void onClickTips(View view) {
+        Intent intent = new Intent(FiremanInformation.this, Tips.class);
+        intent.addFlags(intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(intent);
+    }
+
+    public void onClickDontDo(View view) {
+        Intent intent = new Intent(FiremanInformation.this, DontDo.class);
+        intent.addFlags(intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(intent);
     }
 }
