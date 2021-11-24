@@ -28,8 +28,9 @@ public class MainActivity extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(getApplicationContext(), BuildingCondition.class);
+                Intent intent = new Intent(MainActivity.this, BuildingCondition.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
                 finish();
             }
         }, 3000L); //3000 L = 3 detik

@@ -9,7 +9,9 @@ import io.socket.client.Socket;
 
 public class SocketApp extends Application {
         private Socket mSocket;
-        {
+        @Override
+        public void onCreate(){
+            super.onCreate();
             try {
                 mSocket = IO.socket(Constants.SOCKET_SERVER_URL);
             } catch(URISyntaxException e){
