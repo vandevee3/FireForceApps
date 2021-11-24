@@ -18,33 +18,30 @@ public class BuildingCondition extends AppCompatActivity implements BottomNaviga
         setContentView(R.layout.activity_home);
 
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
+        FiremanInformationFragment firemanFragment = new FiremanInformationFragment();
+        BuildingConditionFragment buildingFragment = new BuildingConditionFragment();
+        TipsFragment tipsFragment = new TipsFragment();
 
-        bottomNavigationView.setOnNavigationItemSelectedListener(this);
+        bottomNavigationView.setOnItemSelectedListener(item -> {
+            switch (item.getItemId()) {
+                case R.id.firemanInformation:
+                    getSupportFragmentManager().beginTransaction().replace(R.id.flFragment, firemanFragment).commit();
+                    return true;
+
+                case R.id.buildingCondition:
+                    getSupportFragmentManager().beginTransaction().replace(R.id.flFragment, buildingFragment).commit();
+                    return true;
+
+                case R.id.tips:
+                    getSupportFragmentManager().beginTransaction().replace(R.id.flFragment, tipsFragment).commit();
+                    return true;
+            }
+            return true;
+        });
         bottomNavigationView.setSelectedItemId(R.id.buildingCondition);
 
     }
-    FiremanInformationFragment firemanFragment = new FiremanInformationFragment();
-    BuildingConditionFragment buildingFragment = new BuildingConditionFragment();
-    TipsFragment tipsFragment = new TipsFragment();
 
-    @Override
-    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-
-        switch (item.getItemId()) {
-            case R.id.firemanInformation:
-                getSupportFragmentManager().beginTransaction().replace(R.id.container, firemanFragment).commit();
-                return true;
-
-            case R.id.buildingCondition:
-                getSupportFragmentManager().beginTransaction().replace(R.id.container, buildingFragment).commit();
-                return true;
-
-            case R.id.tips:
-                getSupportFragmentManager().beginTransaction().replace(R.id.container, tipsFragment).commit();
-                return true;
-        }
-        return false;
-    }
 
 
 }
