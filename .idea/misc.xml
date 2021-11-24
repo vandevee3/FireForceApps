@@ -30,10 +30,14 @@
         <entry key="..\:/Users/ACER/AndroidStudioProjects/FireForceApps2/app/src/main/res/layout/activity_tips.xml" value="0.264" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/FireForceApps2/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.15" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/FireForceApps2/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.15" />
+        <entry key="..\:/Users/farid/AndroidStudioProjects/FireForceApps/app/src/main/res/layout/activity_building_condition.xml" value="0.14270833333333333" />
+        <entry key="..\:/Users/farid/AndroidStudioProjects/FireForceApps/app/src/main/res/layout/activity_dont_do.xml" value="0.14270833333333333" />
+        <entry key="..\:/Users/farid/AndroidStudioProjects/FireForceApps/app/src/main/res/layout/activity_fireman_information.xml" value="0.14270833333333333" />
+        <entry key="..\:/Users/farid/AndroidStudioProjects/FireForceApps/app/src/main/res/layout/activity_home.xml" value="0.14270833333333333" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
