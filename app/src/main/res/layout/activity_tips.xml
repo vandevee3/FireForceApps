@@ -6,10 +6,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/red"
-    tools:context=".Tips"
+    tools:context=".BuildingCondition"
     android:fillViewport="true">
 
     <LinearLayout
+        android:id="@+id/tipsFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
