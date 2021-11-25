@@ -8,6 +8,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.synnapps.carouselview.CarouselView;
+
 /**
  * A simple {@link Fragment} subclass.
  * Use the  factory method to
@@ -22,6 +24,9 @@ public class BuildingConditionFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.activity_building_condition, container, false);
+        ViewGroup view = (ViewGroup) inflater.inflate(R.layout.activity_building_condition, container, false);
+        CarouselView carousel1 = (CarouselView) view.findViewById(R.id.carousel);
+        return view;
+
     }
 }

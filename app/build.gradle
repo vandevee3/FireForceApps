@@ -47,4 +47,7 @@ dependencies {
     implementation ('io.socket:socket.io-client:2.0.0') {
         exclude group: 'org.json', module: 'json'
     }
+    def work_version = "2.7.1"
+    // (Java only)
+    implementation "androidx.work:work-runtime:$work_version"
 }

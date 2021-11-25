@@ -8,18 +8,15 @@ import io.socket.client.IO;
 import io.socket.client.Socket;
 
 public class SocketApp extends Application {
-        private Socket mSocket;
-        @Override
-        public void onCreate(){
-            super.onCreate();
-            try {
-                mSocket = IO.socket(Constants.SOCKET_SERVER_URL);
-            } catch(URISyntaxException e){
-                throw new RuntimeException(e);
-            }
+    private Socket mSocket;
+    {
+        try {
+            mSocket = IO.socket(Constants.SOCKET_SERVER_URL);
+        } catch(URISyntaxException e){
+            throw new RuntimeException(e);
         }
-        public Socket getSocket() {
+    }
+    public Socket getSocket() {
             return mSocket;
         }
-
 }

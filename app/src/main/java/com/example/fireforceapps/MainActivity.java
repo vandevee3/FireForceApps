@@ -1,10 +1,15 @@
 package com.example.fireforceapps;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.work.OneTimeWorkRequest;
+import androidx.work.WorkManager;
+import androidx.work.WorkRequest;
 
 import io.socket.client.Socket;
 
@@ -21,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
         mSocket = app.getSocket();
 
         mSocket.connect();
+
+
 
         getSupportActionBar().hide();
 
