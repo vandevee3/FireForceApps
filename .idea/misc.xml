@@ -5,7 +5,6 @@
       <map>
         <entry key="..\:/Users/ACER/AndroidStudioProjects/FireForceApps2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.14947916666666666" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/FireForceApps2/app/src/main/res/drawable/ic_building_condition_menu.xml" value="0.15" />
-        <entry key="..\:/Users/ACER/AndroidStudioProjects/FireForceApps2/app/src/main/res/drawable/ic_building_foreground.xml" value="0.13541666666666666" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/FireForceApps2/app/src/main/res/drawable/ic_daco_857032_1.xml" value="0.14635416666666667" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/FireForceApps2/app/src/main/res/drawable/ic_dangerous_menu.xml" value="0.2755208333333333" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/FireForceApps2/app/src/main/res/drawable/ic_fireman_information_menu.xml" value="0.2755208333333333" />
@@ -21,7 +20,7 @@
         <entry key="..\:/Users/ACER/AndroidStudioProjects/FireForceApps2/app/src/main/res/drawable/ic_padamkan_api.xml" value="0.14635416666666667" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/FireForceApps2/app/src/main/res/drawable/ic_things_to_do_menu.xml" value="0.15" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/FireForceApps2/app/src/main/res/drawable/ic_tips_menu.xml" value="0.15" />
-        <entry key="..\:/Users/ACER/AndroidStudioProjects/FireForceApps2/app/src/main/res/layout/activity_building_condition.xml" value="0.16" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/FireForceApps2/app/src/main/res/layout/activity_building_condition.xml" value="0.10461956521739131" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/FireForceApps2/app/src/main/res/layout/activity_dont_do.xml" value="0.259375" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/FireForceApps2/app/src/main/res/layout/activity_fireman_information.xml" value="0.2" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/FireForceApps2/app/src/main/res/layout/activity_fireman_location.xml" value="0.10461956521739131" />
@@ -29,9 +28,18 @@
         <entry key="..\:/Users/ACER/AndroidStudioProjects/FireForceApps2/app/src/main/res/layout/activity_main.xml" value="0.2453125" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/FireForceApps2/app/src/main/res/layout/activity_things_to_do.xml" value="0.1" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/FireForceApps2/app/src/main/res/layout/activity_tips.xml" value="0.264" />
-        <entry key="..\:/Users/ACER/AndroidStudioProjects/FireForceApps2/app/src/main/res/menu/bottom_nav_menu.xml" value="0.4" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/FireForceApps2/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.15" />
         <entry key="..\:/Users/ACER/AndroidStudioProjects/FireForceApps2/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.15" />
+        <entry key="..\:/Users/farid/AndroidStudioProjects/FireForceApps/app/src/main/res/drawable/ic_building_click.xml" value="0.15625" />
+        <entry key="..\:/Users/farid/AndroidStudioProjects/FireForceApps/app/src/main/res/drawable/ic_building_foreground.xml" value="0.15572916666666667" />
+        <entry key="..\:/Users/farid/AndroidStudioProjects/FireForceApps/app/src/main/res/drawable/ic_building_unclick.xml" value="0.15625" />
+        <entry key="..\:/Users/farid/AndroidStudioProjects/FireForceApps/app/src/main/res/drawable/ic_buildings_background.xml" value="0.15572916666666667" />
+        <entry key="..\:/Users/farid/AndroidStudioProjects/FireForceApps/app/src/main/res/drawable/ic_buildings_foreground.xml" value="0.15572916666666667" />
+        <entry key="..\:/Users/farid/AndroidStudioProjects/FireForceApps/app/src/main/res/drawable/ic_dont_do_click.xml" value="0.15625" />
+        <entry key="..\:/Users/farid/AndroidStudioProjects/FireForceApps/app/src/main/res/drawable/ic_fireman_click.xml" value="0.15625" />
+        <entry key="..\:/Users/farid/AndroidStudioProjects/FireForceApps/app/src/main/res/drawable/ic_fireman_information_menu.xml" value="0.15625" />
+        <entry key="..\:/Users/farid/AndroidStudioProjects/FireForceApps/app/src/main/res/drawable/ic_fireman_information_menu2.xml" value="0.15625" />
+        <entry key="..\:/Users/farid/AndroidStudioProjects/FireForceApps/app/src/main/res/drawable/ic_warning_information__1_.xml" value="0.15572916666666667" />
         <entry key="..\:/Users/farid/AndroidStudioProjects/FireForceApps/app/src/main/res/layout/activity_building_condition.xml" value="0.33" />
         <entry key="..\:/Users/farid/AndroidStudioProjects/FireForceApps/app/src/main/res/layout/activity_dont_do.xml" value="0.14270833333333333" />
         <entry key="..\:/Users/farid/AndroidStudioProjects/FireForceApps/app/src/main/res/layout/activity_fireman_information.xml" value="0.14270833333333333" />
@@ -43,6 +51,7 @@
         <entry key="..\:/Users/farid/AndroidStudioProjects/FireForceApps/app/src/main/res/layout/fragment_building_condition2.xml" value="0.14270833333333333" />
         <entry key="..\:/Users/farid/AndroidStudioProjects/FireForceApps/app/src/main/res/layout/fragment_fireman_information.xml" value="0.14270833333333333" />
         <entry key="..\:/Users/farid/AndroidStudioProjects/FireForceApps/app/src/main/res/menu/bottom_nav_menu.xml" value="0.13854166666666667" />
+        <entry key="..\:/Users/farid/AndroidStudioProjects/FireForceApps/app/src/main/res/mipmap-anydpi-v26/ic_buildings.xml" value="0.15625" />
       </map>
     </option>
   </component>

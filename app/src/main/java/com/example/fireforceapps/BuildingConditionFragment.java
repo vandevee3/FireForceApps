@@ -43,6 +43,6 @@ public class BuildingConditionFragment extends Fragment {
         carousel1.setPageCount(mImages.length);
         carousel1.setImageListener((position, imageView) -> imageView.setImageResource(mImages[position]));
         carousel1.setImageClickListener(position -> Toast.makeText(getActivity(), mImagesTitle[position], Toast.LENGTH_SHORT).show());
-        return inflater.inflate(R.layout.activity_building_condition, container, false);
+        return view;
     }
 }

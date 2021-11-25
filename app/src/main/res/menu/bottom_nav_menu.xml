@@ -2,15 +2,19 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/firemanInformation"
-        android:icon="@drawable/ic_building_foreground"
+        android:icon="@drawable/ic_baseline_not_listed_location_24"
         android:title="Fireman Information" />
     <item
         android:id="@+id/buildingCondition"
         android:title="Building Condition"
-        android:icon="@drawable/ic_building_unclick"/>
+        android:icon="@drawable/ic_baseline_home_work_24"/>
     <item
         android:id="@+id/tips"
-        android:icon="@drawable/ic_tips_unclick"
+        android:icon="@drawable/ic_baseline_info_24"
+        android:title="Tips" />
+    <item
+        android:id="@+id/dontdo"
+        android:icon="@drawable/ic_baseline_warning_24"
         android:title="Tips" />
 
 </menu>
