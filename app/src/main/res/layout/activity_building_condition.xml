@@ -7,10 +7,10 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     tools:context=".BuildingCondition"
-    android:fillViewport="true">
+    android:fillViewport="true"
+    android:id="@+id/buildingFragment">
 
     <LinearLayout
-        android:id="@+id/buildingFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -26,9 +26,9 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginStart="27dp"
-                android:layout_marginTop="27dp"
-                android:layout_marginEnd="32dp"
+                android:layout_marginStart="39dp"
+                android:layout_marginTop="93dp"
+                android:layout_marginEnd="20dp"
                 app:fillColor="#ED7272"
                 app:pageColor="#FFF"
                 app:radius="6dp">
@@ -65,8 +65,10 @@
                 android:layout_height="70dp"
                 android:layout_below="@+id/button9"
                 android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
                 android:layout_marginStart="70dp"
                 android:layout_marginTop="34dp"
+                android:layout_marginBottom="231dp"
                 android:backgroundTint="@color/gray1"
                 android:text="G"
                 android:textColor="@color/black" />
@@ -101,8 +103,10 @@
                 android:layout_height="70dp"
                 android:layout_below="@+id/button11"
                 android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
                 android:layout_marginTop="34dp"
                 android:layout_marginEnd="70dp"
+                android:layout_marginBottom="231dp"
                 android:backgroundTint="@color/gray1"
                 android:text="UG"
                 android:textColor="@color/black" />
