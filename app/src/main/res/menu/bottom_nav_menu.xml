@@ -2,15 +2,15 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/firemanInformation"
-        android:title="Fireman Information"
-        android:icon="@drawable/ic_fireman_unclick"/>
+        android:icon="@drawable/ic_building_foreground"
+        android:title="Fireman Information" />
     <item
         android:id="@+id/buildingCondition"
         android:title="Building Condition"
         android:icon="@drawable/ic_building_unclick"/>
     <item
         android:id="@+id/tips"
-        android:title="Tips"
-        android:icon="@drawable/ic_tips_unclick"/>
+        android:icon="@drawable/ic_tips_unclick"
+        android:title="Tips" />
 
 </menu>

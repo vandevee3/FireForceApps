@@ -5,10 +5,15 @@ import java.io.*;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.annotation.NonNull;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.synnapps.carouselview.CarouselView;
+import com.synnapps.carouselview.ImageClickListener;
+import com.synnapps.carouselview.ImageListener;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.ImageView;
+import android.widget.Toast;
+
 
 public class BuildingCondition extends AppCompatActivity {
 
@@ -16,13 +21,17 @@ public class BuildingCondition extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        getSupportActionBar().hide();
+
 
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
         FiremanInformationFragment firemanFragment = new FiremanInformationFragment();
         BuildingConditionFragment buildingFragment = new BuildingConditionFragment();
         TipsFragment tipsFragment = new TipsFragment();
+
 
         bottomNavigationView.setOnItemSelectedListener(item -> {
             switch (item.getItemId()) {
@@ -41,7 +50,6 @@ public class BuildingCondition extends AppCompatActivity {
             return true;
         });
         bottomNavigationView.setSelectedItemId(R.id.buildingCondition);
-
     }
 
 
