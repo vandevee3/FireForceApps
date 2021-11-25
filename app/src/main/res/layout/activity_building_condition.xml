@@ -12,12 +12,13 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="50dp">
 
             <com.synnapps.carouselview.CarouselView
                 android:id="@+id/carousel"
@@ -26,14 +27,10 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginStart="39dp"
-                android:layout_marginTop="93dp"
-                android:layout_marginEnd="20dp"
+                android:layout_margin="30dp"
                 app:fillColor="#ED7272"
                 app:pageColor="#FFF"
-                app:radius="6dp">
-
-            </com.synnapps.carouselview.CarouselView>
+                app:radius="6dp"/>
 
             <Button
                 android:id="@id/button7"
@@ -41,7 +38,7 @@
                 android:layout_height="70dp"
                 android:layout_below="@+id/carousel"
                 android:layout_alignParentStart="true"
-                android:layout_marginStart="70dp"
+                android:layout_marginHorizontal="70dp"
                 android:layout_marginTop="40dp"
                 android:backgroundTint="@color/gray1"
                 android:text="4TH"
@@ -53,8 +50,8 @@
                 android:layout_height="70dp"
                 android:layout_below="@+id/button7"
                 android:layout_alignParentStart="true"
-                android:layout_marginStart="70dp"
-                android:layout_marginTop="34dp"
+                android:layout_marginHorizontal="70dp"
+                android:layout_marginTop="40dp"
                 android:backgroundTint="@color/gray1"
                 android:text="2ND"
                 android:textColor="@color/black" />
@@ -65,10 +62,8 @@
                 android:layout_height="70dp"
                 android:layout_below="@+id/button9"
                 android:layout_alignParentStart="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginStart="70dp"
-                android:layout_marginTop="34dp"
-                android:layout_marginBottom="231dp"
+                android:layout_marginHorizontal="70dp"
+                android:layout_marginTop="40dp"
                 android:backgroundTint="@color/gray1"
                 android:text="G"
                 android:textColor="@color/black" />
@@ -79,8 +74,8 @@
                 android:layout_height="70dp"
                 android:layout_below="@+id/carousel"
                 android:layout_alignParentEnd="true"
+                android:layout_marginHorizontal="70dp"
                 android:layout_marginTop="40dp"
-                android:layout_marginEnd="70dp"
                 android:backgroundTint="@color/gray1"
                 android:text="3RD"
                 android:textColor="@color/black" />
@@ -91,8 +86,8 @@
                 android:layout_height="70dp"
                 android:layout_below="@+id/button8"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="34dp"
-                android:layout_marginEnd="70dp"
+                android:layout_marginHorizontal="70dp"
+                android:layout_marginTop="40dp"
                 android:backgroundTint="@color/gray1"
                 android:text="1ST"
                 android:textColor="@color/black" />
@@ -103,10 +98,8 @@
                 android:layout_height="70dp"
                 android:layout_below="@+id/button11"
                 android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginTop="34dp"
-                android:layout_marginEnd="70dp"
-                android:layout_marginBottom="231dp"
+                android:layout_marginHorizontal="70dp"
+                android:layout_marginTop="40dp"
                 android:backgroundTint="@color/gray1"
                 android:text="UG"
                 android:textColor="@color/black" />

@@ -31,6 +31,7 @@ public class BuildingCondition extends AppCompatActivity {
         FiremanInformationFragment firemanFragment = new FiremanInformationFragment();
         BuildingConditionFragment buildingFragment = new BuildingConditionFragment();
         TipsFragment tipsFragment = new TipsFragment();
+        DontDoFragment dontDoFragment = new DontDoFragment();
 
 
         bottomNavigationView.setOnItemSelectedListener(item -> {
@@ -45,6 +46,10 @@ public class BuildingCondition extends AppCompatActivity {
 
                 case R.id.tips:
                     getSupportFragmentManager().beginTransaction().replace(R.id.flFragment, tipsFragment).commit();
+                    return true;
+
+                case R.id.dontdo:
+                    getSupportFragmentManager().beginTransaction().replace(R.id.flFragment, dontDoFragment).commit();
                     return true;
             }
             return true;
