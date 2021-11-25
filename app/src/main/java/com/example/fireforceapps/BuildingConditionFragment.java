@@ -1,5 +1,6 @@
 package com.example.fireforceapps;
 
+import android.media.Image;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -10,11 +11,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.synnapps.carouselview.CarouselView;
 import com.synnapps.carouselview.ImageClickListener;
 import com.synnapps.carouselview.ImageListener;
+import com.synnapps.carouselview.ViewListener;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -41,8 +44,21 @@ public class BuildingConditionFragment extends Fragment {
         ViewGroup view = (ViewGroup) inflater.inflate(R.layout.activity_building_condition, container, false);
         CarouselView carousel1 = (CarouselView) view.findViewById(R.id.carousel);
         carousel1.setPageCount(mImages.length);
-        carousel1.setImageListener((position, imageView) -> imageView.setImageResource(mImages[position]));
-        carousel1.setImageClickListener(position -> Toast.makeText(getActivity(), mImagesTitle[position], Toast.LENGTH_SHORT).show());
+//        carousel1.setImageListener((position, imageView) -> imageView.setImageResource(mImages[position]));
+//        carousel1.setImageClickListener(position -> Toast.makeText(getActivity(), mImagesTitle[position], Toast.LENGTH_SHORT).show());
+        carousel1.setViewListener(new ViewListener() {
+            @Override
+            public View setViewForPosition(int position) {
+                View vView = getLayoutInflater().inflate(R.layout.custom_carousel, null);
+                ImageView image = (ImageView) vView.findViewById(R.id.carouselImage);
+                TextView title = (TextView) vView.findViewById(R.id.carouselText);
+
+                title.setText(mImagesTitle[position]);
+                image.setImageResource(mImages[position]);
+
+                return vView;
+            }
+        });
         return view;
     }
 }
