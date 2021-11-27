@@ -1,5 +1,6 @@
 package com.example.fireforceapps;
 
+import android.content.Intent;
 import android.media.Image;
 import android.os.Bundle;
 
@@ -9,6 +10,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -25,6 +27,8 @@ import com.synnapps.carouselview.ViewListener;
  * create an instance of this fragment.
  */
 public class BuildingConditionFragment extends Fragment {
+
+    Button button7;
 
     private int [] mImages = new int []{
             R.drawable.ic_warning_information__1_,R.drawable.ic_safe_information__1_
@@ -43,6 +47,7 @@ public class BuildingConditionFragment extends Fragment {
         // Inflate the layout for this fragment
         ViewGroup view = (ViewGroup) inflater.inflate(R.layout.activity_building_condition, container, false);
         CarouselView carousel1 = (CarouselView) view.findViewById(R.id.carousel);
+
         carousel1.setPageCount(mImages.length);
 //        carousel1.setImageListener((position, imageView) -> imageView.setImageResource(mImages[position]));
 //        carousel1.setImageClickListener(position -> Toast.makeText(getActivity(), mImagesTitle[position], Toast.LENGTH_SHORT).show());
@@ -59,6 +64,15 @@ public class BuildingConditionFragment extends Fragment {
                 return vView;
             }
         });
+
+        button7 = view.findViewById(R.id.button7);
+        button7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                button7.setBackground(getResources().getDrawable(R.color.buttoncolors));
+            }
+        });
+
         return view;
     }
 }
