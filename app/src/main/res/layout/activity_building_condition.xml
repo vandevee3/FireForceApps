@@ -40,7 +40,7 @@
                 android:layout_alignParentStart="true"
                 android:layout_marginHorizontal="70dp"
                 android:layout_marginTop="40dp"
-                android:backgroundTint="@color/gray1"
+                android:backgroundTint="@color/buttoncolors"
                 android:text="4TH"
                 android:textColor="@color/black" />
 
