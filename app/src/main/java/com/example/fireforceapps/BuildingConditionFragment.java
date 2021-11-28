@@ -8,6 +8,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -196,7 +197,6 @@ public class BuildingConditionFragment extends Fragment {
                 } else if (UGFloor){
                     title.setText(mLantaiUG[position]);
                 }
-
 
                 if (!isSafe){
                     image.setImageResource(mImages[0]);
