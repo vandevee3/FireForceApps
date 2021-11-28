@@ -8,6 +8,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -64,14 +65,21 @@ public class BuildingConditionFragment extends Fragment {
                 return vView;
             }
         });
-
+        final boolean[] state = {false};
         button7 = view.findViewById(R.id.button7);
         button7.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                button7.setBackground(getResources().getDrawable(R.color.buttoncolors));
+            public void onClick(View view) {
+                if(!state[0]){
+                    button7.setBackgroundColor(getResources().getColor(R.color.red));
+                    state[0] = true;
+                }else{
+                    button7.setBackgroundColor(getResources().getColor(R.color.gray1));
+                    state[0] = false;
+                }
             }
         });
+
 
         return view;
     }
